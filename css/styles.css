@@ -1,0 +1,1009 @@
+/* = = = global styles start  = = = = = = = = = = = = = = = = =  */
+/* CSS Reset - from CSS-TRICKS */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: 'nimbus-sans-extended', Helvetica, sans-serif;
+  --content-margin: 0 15% 0 5%;
+  --red: #CC0000;
+  --white: #F6F6F6;
+  --black: #242424;
+  --melon: #EF496F;
+  --forest: #206341;
+  --violet: #B892E8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--black);
+  background: var(--white);
+}
+
+p {
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+  margin-right: 5%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  margin-right: 5%;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+/* = = = global styles end = = = = = = = = = = = = = = = = =  */
+/* = = = landing styles start = = = = = = = = = = = = = = = = =  */
+.landing-container {
+  display: grid;
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  gap: 5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "lt lt lt lt  lt lt lt lt  lm lm lm lm"
+    "lt lt lt lt  lt lt lt lt  lm lm lm lm"
+    "lj lj lj lj  lj lj lj lj  lj lj lj le"
+    "lj lj lj lj  lj lj lj lj  lj lj lj le"
+    "lj lj lj lj  lj lj lj lj  lj lj lj le"
+    "lj lj lj lj  lj lj lj lj  lj lj lj le"
+}
+
+.landing-title {
+  grid-area: lt;
+  color: var(--red);
+}
+
+.landing-title h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.landing-title h3 {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  line-height: normal;
+  text-align: left;
+}
+
+.landing-menu {
+  grid-area: lm;
+}
+
+.landing-menu ul {
+  text-align: right;
+}
+
+.landing-menu li {
+  font-size: 1rem;
+  line-height: 4rem;
+  transition: .2s ease-in-out;
+}
+
+.landing-menu li:hover {
+  margin-right: 1rem;
+}
+
+.landing-job {
+  grid-area: lj;
+}
+
+.landing-job h2 {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: var(--black);
+  -webkit-text-fill-color: var(--white);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-transform: uppercase;
+  letter-spacing: -.3rem;
+  margin-left: -.1rem;
+  padding-top: 8%;
+  white-space: nowrap;
+}
+
+.fashion-link:hover {
+  -webkit-text-fill-color: var(--red);
+  -webkit-text-stroke-width: 0;
+}
+
+.dev-link:hover {
+  -webkit-text-fill-color: var(--red);
+  -webkit-text-stroke-width: 0;
+}
+
+.landing-explore {
+  grid-area: le;
+}
+
+.landing-explore h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  align-self: end;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-top: 37%;
+}
+
+/* = = = landing styles end = = = = = = = = = = = = = = = = =  */
+/* = = = marlow styles start = = = = = = = = = = = = = = = = =  */
+.marlow-sub {
+  color: var(--forest);
+}
+
+.marlow-link {
+  color: var(--forest);
+  font-style: italic;
+}
+
+.marlow-link:hover,
+.sharesies-link:hover {
+  font-weight: bold;
+}
+
+/* = = = marlow styles end = = = = = = = = = = = = = = = = = = */
+/* = = = sharesies styles start = = = = = = = = = = = = = = = = =  */
+.sharesies-sub {
+  color: var(--melon);
+}
+
+.sharesies-link {
+  color: var(--melon);
+  font-style: italic;
+}
+
+/* = = = sharesies styles end = = = = = = = = = = = = = = = = = = */
+/* = = = lucent styles start = = = = = = = = = = = = = = = = =  */
+.lucent-sub {
+  color: orange;
+}
+
+.lucent-phone-spacing {
+  margin-bottom: 70px;
+}
+
+/* = = = lucent styles end = = = = = = = = = = = = = = = = = = */
+/* = = = need a hand styles start = = = = = = = = = = = = = =  */
+.need-a-hand-sub {
+  color: var(--violet);
+}
+
+.need-list-spacing li {
+  padding: 5px 0;
+}
+
+.rotate {
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#need-element-image img {
+  width: 20%;
+  padding: 0 5%;
+}
+
+/* = = = need a hand styles end = = = = = = = = = = = = = = =  */
+/* = = = project header content starts = = = = = = = = = = = = = =  */
+.project-title-container {
+  display: grid;
+  width: 85%;
+  height: auto;
+  margin: 20px auto;
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4fr);
+  grid-template-areas:
+    "nb nf"
+    "mt ."
+    "st ."
+    "st bt"
+}
+
+.nav-back {
+  grid-area: nb;
+  border: 1px solid transparent;
+}
+
+.nav-forward a,
+.nav-back a {
+  transition: .2s ease-in-out;
+}
+
+.nav-forward {
+  grid-area: nf;
+  text-align: right;
+}
+
+.nav-forward a:hover {
+  margin-right: 1rem;
+}
+
+.nav-back a:hover {
+  margin-left: 1rem;
+}
+
+.nav-forward:hover,
+.nav-back:hover {
+  border-bottom: 1px dotted grey;
+}
+
+.main-title {
+  grid-area: mt;
+}
+
+.main-title h1 {
+  grid-area: mt;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-align: right;
+  text-transform: uppercase;
+  margin-right: 5%;
+  padding-top: 1rem;
+}
+
+.sub-title {
+  grid-area: st;
+}
+
+.sub-title h2 {
+  font-size: 2.5rem;
+  text-align: right;
+  margin-right: 5%;
+}
+
+.blurb-title {
+  grid-area: bt;
+}
+
+.blurb-title h3 {
+  font-size: 1.1rem;
+  text-align: left;
+  padding-bottom: 1%;
+}
+
+.banner-container {
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+}
+
+.banner img,
+.marlow-mid-banner img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+/* = = = project header content ends = = = = = = = = = = = = = =  */
+/* = = = project content starts = = = = = = = = = = = = = =  */
+.content-container {
+  display: grid;
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "stack stack-li stack-li"
+    "content-title-one content-one content-one"
+    "content-title-two content-two content-two"
+    "content-title-three content-three content-three"
+    "content-title-four content-four content-four"
+    "content-title-five content-five content-five"
+    "content-title-six content-six content-six"
+    "marlow-mid-banner marlow-mid-banner marlow-mid-banner"
+    "content-title-seven content-seven content-seven"
+    "content-title-eight content-eight content-eight"
+    "content-title-nine content-nine content-nine"
+    "content-title-ten content-ten content-ten"
+    "content-title-eleven content-eleven content-eleven"
+    "content-title-twelve content-twelve content-twelve"
+}
+
+.marlow-mid-banner {
+  grid-area: marlow-mid-banner
+}
+
+.stack {
+  grid-area: stack;
+}
+
+.stack-list {
+  grid-area: stack-li;
+  margin-left: 5%;
+  margin-right: 15%;
+  border: 1px dashed grey;
+}
+
+.stack-list p {
+  padding: 10%;
+}
+
+.spacing-below,
+.spacing-below img {
+  margin-bottom: 20px;
+}
+
+.spacing-above {
+  margin-top: 20px;
+}
+
+.content-title-one {
+  grid-area: content-title-one;
+}
+
+.content-one {
+  grid-area: content-one;
+  margin: var(--content-margin);
+}
+
+.content-title-two {
+  grid-area: content-title-two;
+}
+
+.content-two {
+  grid-area: content-two;
+  margin: var(--content-margin);
+}
+
+.content-title-three {
+  grid-area: content-title-three;
+}
+
+.content-three {
+  grid-area: content-three;
+  margin: var(--content-margin);
+}
+
+.content-three h4 {
+  text-align: left;
+}
+
+.content-title-four {
+  grid-area: content-title-four;
+}
+
+.content-four {
+  grid-area: content-four;
+  margin: var(--content-margin);
+}
+
+.content-title-five {
+  grid-area: content-title-five;
+}
+
+.content-five {
+  grid-area: content-five;
+  margin: var(--content-margin);
+}
+
+.content-title-six {
+  grid-area: content-title-six;
+}
+
+.content-six {
+  grid-area: content-six;
+  margin: var(--content-margin);
+}
+
+.content-title-seven {
+  grid-area: content-title-seven;
+}
+
+.content-seven {
+  grid-area: content-seven;
+  margin: var(--content-margin);
+}
+
+.content-title-eight {
+  grid-area: content-title-eight;
+}
+
+.content-eight {
+  grid-area: content-eight;
+  margin: var(--content-margin);
+}
+
+.content-title-nine {
+  grid-area: content-title-nine;
+}
+
+.content-nine {
+  grid-area: content-nine;
+  margin: var(--content-margin);
+}
+
+.content-title-ten {
+  grid-area: content-title-ten;
+}
+
+.content-ten {
+  grid-area: content-ten;
+  margin: var(--content-margin);
+}
+
+.content-title-eleven {
+  grid-area: content-title-eleven;
+}
+
+.content-eleven {
+  grid-area: content-eleven;
+  margin: var(--content-margin);
+}
+
+.content-title-twelve {
+  grid-area: content-title-twelve;
+}
+
+.content-twelve {
+  grid-area: content-twelve;
+  margin: var(--content-margin);
+  list-style: none;
+}
+
+/* = = = project content ends = = = = = = = = = = = = = =  */
+/* = = = card content starts = = = = = = = = = = = = = =  */
+.card-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 0;
+  border: 1px dotted #333;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.card-container::before, .card-container::after {
+  position: absolute;
+  background: rgba(246, 246, 246, 0.90);
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.card-container::before {
+  height: 400px;
+  width: 280px;
+}
+
+.card-container:after {
+  width: 300px;
+  height: 380px;
+}
+
+.card-container:hover::before {
+  width: 0px;
+  background: #fff;
+}
+
+.card-container:hover::after {
+  height: 0px;
+  background: #fff;
+}
+
+.card-container:hover {
+  background: #fff;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.card-content h3 {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+/* = = = card content ends = = = = = = = = = = = = = =  */
+/* = = = project content starts = = = = = = = = = = = = = =  */
+.product-container {
+  display: grid;
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "nh . np"
+    "card-title card-title card-title "
+    "project-card-one project-card-two project-card-three "
+}
+
+.nav-home {
+  grid-area: nh;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  border: 1px solid transparent;
+}
+
+.nav-project {
+  grid-area: np;
+  text-align: right;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
+  border: 1px solid transparent;
+}
+
+.nav-home a,
+.nav-project a {
+  transition: .2s ease-in-out;
+}
+
+.nav-home a:hover {
+  margin-left: 2.5rem;
+}
+
+.nav-project a:hover {
+  margin-right: 2.5rem;
+}
+
+.nav-home:hover,
+.nav-project:hover {
+  border-bottom: 1px dotted grey;
+}
+
+.card-title {
+  grid-area: card-title;
+  margin-left: 1.5rem;
+}
+
+.card-title h1 {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 4rem;
+  padding-bottom: 10px;
+  padding-top: 1rem;
+}
+
+.project-card-one {
+  margin: 40px auto;
+  grid-area: project-card-one;
+}
+
+.project-card-two {
+  margin: 40px auto;
+  grid-area: project-card-two;
+}
+
+.project-card-three {
+  margin: 40px auto;
+  grid-area: project-card-three;
+}
+
+.project-card-four {
+  margin: 40px auto;
+  grid-area: project-card-four;
+}
+
+.project-card-one:hover .test-img {
+  display: block;
+}
+
+/* = = = project content ends = = = = = = = = = = = = = =  */
+/* = = = about content starts = = = = = = = = = = = = = =  */
+.about-container {
+  display: grid;
+  width: 85%;
+  height: auto;
+  margin: 20px auto;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "about-title about-title about-menu about-menu"
+    ". . about-menu about-menu"
+    "profile-img profile-img . ."
+    "profile-img profile-img profile-blurb profile-blurb"
+    ". . contact-title contact-title"
+    ". . contact-card contact-card"
+}
+
+.about-title {
+  grid-area: about-title;
+}
+
+.about-title h1 {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+.about-title h3 {
+  color: var(--red);
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.about-menu {
+  grid-area: about-menu;
+}
+
+.about-menu h3 {
+  color: var(--red);
+  font-size: 1.2rem;
+}
+
+.about-menu ul {
+  text-align: right;
+}
+
+.about-menu li {
+  font-size: 1rem;
+  line-height: 4rem;
+  transition: .2s ease-in-out;
+}
+
+.about-menu li:hover {
+  margin-right: 1rem;
+}
+
+.profile-img {
+  grid-area: profile-img;
+}
+
+.profile-img img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-blurb {
+  grid-area: profile-blurb;
+}
+
+.profile-blurb p {
+  padding: 10%;
+}
+
+.contact-title {
+  grid-area: contact-title;
+}
+
+.contact-title h1 {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 4.5rem;
+  text-align: right;
+}
+
+.contact-card {
+  grid-area: contact-card;
+}
+
+.contact-card-inner {
+  background-color: #fff;
+  line-height: 3rem;
+  border-radius: 2px;
+  padding: 6%;
+  border: 1px dashed grey;
+}
+
+.contact-card-inner:hover {
+  border: 1px solid black;
+}
+
+.contact-card-title {
+  color: var(--red);
+  font-size: 1.2rem;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.first-word {
+  font-weight: 700;
+  transition: .2s ease-in-out;
+}
+
+.first-word:hover {
+  margin-left: 1rem;
+}
+
+.footer-about {
+  visibility: hidden;
+}
+
+/* = = = about content ends = = = = = = = = = = = = = =  */
+/* = = = footer starts = = = = = = = = = = = = = = = =  */
+.footer-container {
+  display: grid;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px dotted grey;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    ". . . ."
+}
+
+.footer-container a {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.footer-container a:hover {
+  color: var(--red);
+  transition: .1s;
+}
+
+/* = = = footer ends = = = = = = = = = = = = = = = = =  */
+/* = = = media queries starts = = = = = = = = = = = = = = = =  */
+@media (max-width: 950px) {
+
+  /* start of media query 950px */
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "nh np"
+      "card-title card-title"
+      "project-card-one project-card-two"
+      "project-card-three project-card-four"
+  }
+
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "about-title about-title"
+      "profile-img profile-img"
+      "profile-blurb profile-blurb"
+      "contact-title  contact-title"
+      "contact-card  contact-card"
+  }
+
+  .about-menu {
+    display: none;
+  }
+
+  .profile-img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .contact-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .footer-about {
+    visibility: visible;
+    margin-top: 5rem;
+  }
+
+  /* end of media query 950px */
+}
+
+@media (max-width: 767px) {
+
+  /* start of media query 767px */
+  .landing-container {
+    display: grid;
+    width: 85%;
+    height: 100PX;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "lt lt"
+      "lm lm"
+      "lj lj"
+      "lj lj"
+  }
+
+  .landing-explore h2 {
+    display: none;
+  }
+
+  .landing-title h3 {
+    margin: 0px;
+  }
+
+  .landing-menu ul {
+    text-align: left;
+    padding-top: 4%;
+  }
+
+  .landing-menu li {
+    font-size: 1rem;
+    line-height: 2rem;
+    transition: .2s ease-in-out;
+  }
+
+  .landing-menu li:hover {
+    margin-left: 1rem;
+  }
+
+  .landing-job h2 {
+    font-size: 3.7rem;
+    letter-spacing: -.1rem;
+    margin-left: 0px;
+    white-space: normal;
+    padding-top: 3%;
+  }
+
+  .project-title-container {
+    display: grid;
+    width: 85%;
+    height: auto;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "nb nf"
+      "mt mt"
+      "st st"
+      "bt bt"
+  }
+
+  .main-title h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .sub-title h2 {
+    text-align: center;
+    margin: 0px;
+  }
+
+  .blurb-title h3 {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  .content-container {
+    width: 85%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "stack"
+      "stack-li"
+      "content-title-one"
+      "content-one"
+      "content-title-two"
+      "content-two"
+      "content-title-three"
+      "content-three"
+      "content-title-four"
+      "content-four"
+      "content-title-five"
+      "content-five"
+      "content-title-six"
+      "content-six"
+      "marlow-mid-banner"
+      "content-title-seven"
+      "content-seven"
+      "content-title-eight"
+      "content-eight"
+      "content-title-nine"
+      "content-nine"
+      "content-title-ten"
+      "content-ten"
+      "content-title-eleven"
+      "content-eleven"
+      "content-title-twelve"
+      "content-twelve"
+  }
+
+  .stack-list,
+  .content-one,
+  .content-two,
+  .content-three,
+  .content-four,
+  .content-five,
+  .content-six,
+  .content-seven,
+  .content-eight,
+  .content-nine,
+  .content-ten,
+  .content-eleven,
+  .content-twelve {
+    margin: 0 5%;
+  }
+
+  h3,
+  h4 {
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .marlow-mid-banner {
+    margin: 0 5%;
+  }
+
+  .footer-container {
+    width: 85%;
+  }
+
+  .footer-container a {
+    padding: 1rem 0.2rem;
+  }
+
+  /* end of media query 767px */
+}
+
+@media (max-width: 700px) {
+
+  /* start of media query 700px */
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "nh np"
+      "card-title card-title"
+      "project-card-one project-card-one"
+      "project-card-two project-card-two"
+      "project-card-three project-card-three"
+  }
+
+  .card-title h1 {
+    font-size: 3.5rem;
+  }
+
+  /* start of media query 700px */
+  /* = = = media queries starts = = = = = = = = = = = = = = = =  */
+  /* css style sheet ends */
