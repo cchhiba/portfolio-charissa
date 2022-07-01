@@ -523,16 +523,16 @@ img {
 
 .card-container:hover::before {
   width: 0px;
-  background: hsla(0, 50%, 50%, 0.7);
+  background: #fff;
 }
 
 .card-container:hover::after {
   height: 0px;
-  background: hsla(0, 50%, 50%, 0.7);
+  background: #fff;
 }
 
 .card-container:hover {
-  background: hsla(0, 50%, 50%, 0.7);
+  background: #fff;
 }
 
 .card-content {
