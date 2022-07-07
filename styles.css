@@ -706,7 +706,7 @@ img {
 }
 
 .profile-img img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -715,7 +715,11 @@ img {
 }
 
 .profile-blurb p {
-  padding: 10%;
+  padding: 0 15% 0 10%;
+}
+
+.profile-blurb-bottom {
+  margin-bottom: 15%;
 }
 
 .contact-title {
