@@ -16,6 +16,7 @@
   --forest: #206341;
   --violet: #B892E8;
   --purple: #AC86E7;
+  --navy: #1E2851;
 }
 
 html {
@@ -240,6 +241,12 @@ img {
 }
 
 /* = = = Goldie styles end = = = = = = = = = = = = = = = = = = */
+/* = = = Goldie styles start = = = = = = = = = = = = = = = = =  */
+.pushpay-sub {
+  color: var(--navy);
+}
+
+/* = = = Goldie styles end = = = = = = = = = = = = = = = = = = */
 /* = = = project header content starts = = = = = = = = = = = = = =  */
 .project-title-container {
   display: grid;
@@ -326,10 +333,16 @@ img {
 }
 
 .banner img,
-.marlow-mid-banner img {
+.marlow-mid-banner img,
+.hackathon-mid-banner img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
+}
+
+.hackathon-banner {
+  width: 50%;
+  margin: auto;
 }
 
 /* = = = project header content ends = = = = = = = = = = = = = =  */
@@ -353,6 +366,7 @@ img {
     "content-title-seven content-seven content-seven"
     "content-title-eight content-eight content-eight"
     "content-title-nine content-nine content-nine"
+    "hackathon-mid-banner hackathon-mid-banner hackathon-mid-banner"
     "content-title-ten content-ten content-ten"
     "content-title-eleven content-eleven content-eleven"
     "content-title-twelve content-twelve content-twelve"
@@ -360,6 +374,10 @@ img {
 
 .marlow-mid-banner {
   grid-area: marlow-mid-banner
+}
+
+.hackathon-mid-banner {
+  grid-area: hackathon-mid-banner
 }
 
 .stack {
@@ -583,7 +601,7 @@ img {
     "nh . np"
     "card-title card-title card-title "
     "project-card-one project-card-two project-card-three"
-    "project-card-four . ."
+    "project-card-four project-card-five ."
 }
 
 .nav-home {
@@ -650,6 +668,11 @@ img {
 .project-card-four {
   margin: 40px auto;
   grid-area: project-card-four;
+}
+
+.project-card-five {
+  margin: 40px auto;
+  grid-area: project-card-five;
 }
 
 .project-card-one:hover .test-img {
@@ -819,6 +842,7 @@ img {
       "card-title card-title"
       "project-card-one project-card-two"
       "project-card-three project-card-four"
+      "project-card-five ."
   }
 
   .about-container {
@@ -959,6 +983,7 @@ img {
       "content-eight"
       "content-title-nine"
       "content-nine"
+      "hackathon-mid-banner"
       "content-title-ten"
       "content-ten"
       "content-title-eleven"
@@ -993,6 +1018,10 @@ img {
     margin: 0 5%;
   }
 
+  .hackathon-mid-banner {
+    margin: 0 5%;
+  }
+
   .footer-container {
     width: 85%;
   }
@@ -1016,6 +1045,7 @@ img {
       "project-card-two project-card-two"
       "project-card-three project-card-three"
       "project-card-four project-card-four"
+      "project-card-five project-card-five"
   }
 
   .card-title h1 {
