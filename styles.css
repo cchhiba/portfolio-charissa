@@ -241,12 +241,12 @@ img {
 }
 
 /* = = = Goldie styles end = = = = = = = = = = = = = = = = = = */
-/* = = = Goldie styles start = = = = = = = = = = = = = = = = =  */
+/* = = = Pushpay styles start = = = = = = = = = = = = = = = = =  */
 .pushpay-sub {
   color: var(--navy);
 }
 
-/* = = = Goldie styles end = = = = = = = = = = = = = = = = = = */
+/* = = = Pushpay styles end = = = = = = = = = = = = = = = = = = */
 /* = = = project header content starts = = = = = = = = = = = = = =  */
 .project-title-container {
   display: grid;
@@ -600,7 +600,7 @@ img {
   grid-template-areas:
     "nh . np"
     "card-title card-title card-title "
-    "project-card-one project-card-two project-card-three"
+    "project-card-one project-card d-two project-card-three"
     "project-card-four project-card-five ."
 }
 
