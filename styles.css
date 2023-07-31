@@ -172,25 +172,10 @@ img {
   color: var(--forest);
 }
 
-.marlow-link {
-  color: var(--forest);
-  font-style: italic;
-}
-
-.marlow-link:hover,
-.sharesies-link:hover {
-  font-weight: bold;
-}
-
 /* = = = marlow styles end = = = = = = = = = = = = = = = = = = */
 /* = = = sharesies styles start = = = = = = = = = = = = = = = = =  */
 .sharesies-sub {
   color: var(--melon);
-}
-
-.sharesies-link {
-  color: var(--melon);
-  font-style: italic;
 }
 
 /* = = = sharesies styles end = = = = = = = = = = = = = = = = = = */
@@ -236,11 +221,6 @@ img {
 /* = = = Goldie styles start = = = = = = = = = = = = = = = = =  */
 .goldie-sub {
   color: var(--purple);
-}
-
-.goldie-link {
-  color: var(--purple);
-  font-style: italic;
 }
 
 /* = = = oldie styles end = = = = = = = = = = = = = = = = = = */
@@ -512,6 +492,10 @@ img {
   margin: var(--content-margin);
 }
 
+.content-nine h4 {
+  text-align: left;
+}
+
 .content-title-ten {
   grid-area: content-title-ten;
 }
@@ -528,6 +512,10 @@ img {
 .content-eleven {
   grid-area: content-eleven;
   margin: var(--content-margin);
+}
+
+.content-eleven h4 {
+  text-align: left;
 }
 
 .content-title-twelve {
