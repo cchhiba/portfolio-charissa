@@ -17,6 +17,9 @@
   --violet: #B892E8;
   --purple: #AC86E7;
   --navy: #1E2851;
+  --orange: orange;
+  --lemon: #BCBB91;
+
 }
 
 html {
@@ -193,7 +196,7 @@ img {
 /* = = = sharesies styles end = = = = = = = = = = = = = = = = = = */
 /* = = = lucent styles start = = = = = = = = = = = = = = = = =  */
 .lucent-sub {
-  color: orange;
+  color: var(--orange);
 }
 
 .lucent-phone-spacing {
@@ -240,13 +243,19 @@ img {
   font-style: italic;
 }
 
-/* = = = Goldie styles end = = = = = = = = = = = = = = = = = = */
-/* = = = Pushpay styles start = = = = = = = = = = = = = = = = =  */
+/* = = = oldie styles end = = = = = = = = = = = = = = = = = = */
+/* = = = pushpay styles start = = = = = = = = = = = = = = = = =  */
 .pushpay-sub {
   color: var(--navy);
 }
 
-/* = = = Pushpay styles end = = = = = = = = = = = = = = = = = = */
+/* = = = pushpay styles end = = = = = = = = = = = = = = = = = = */
+/* = = = sutram styles start = = = = = = = = = = = = = = = = =  */
+.sutram-sub {
+  color: var(--lemon);
+}
+
+/* = = = sutram styles end = = = = = = = = = = = = = = = = = = */
 /* = = = project header content starts = = = = = = = = = = = = = =  */
 .project-title-container {
   display: grid;
@@ -370,6 +379,20 @@ img {
     "content-title-ten content-ten content-ten"
     "content-title-eleven content-eleven content-eleven"
     "content-title-twelve content-twelve content-twelve"
+}
+
+.content-container-two {
+  display: grid;
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "stack stack-li stack-li"
+    "content-title-one content-one content-one"
+    "content-title-two content-two content-two"
+    "content-title-three content-three content-three"
 }
 
 .marlow-mid-banner {
@@ -600,7 +623,7 @@ img {
   grid-template-areas:
     "nh . np"
     "card-title card-title card-title "
-    "project-card-one project-card d-two project-card-three"
+    "project-card-one project-card-two project-card-three"
     "project-card-four project-card-five ."
 }
 
@@ -990,6 +1013,18 @@ img {
       "content-eleven"
       "content-title-twelve"
       "content-twelve"
+  }
+
+  .content-container-two {
+    width: 85%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "content-title-one"
+      "content-one"
+      "content-title-two"
+      "content-two"
+      "content-title-three"
+      "content-three"
   }
 
   .stack-list,
