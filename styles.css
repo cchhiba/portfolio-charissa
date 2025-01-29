@@ -19,6 +19,7 @@
   --navy: #1E2851;
   --orange: orange;
   --lemon: #BCBB91;
+  --gold: #C28710;
 
 }
 
@@ -236,6 +237,12 @@ img {
 }
 
 /* = = = sutram styles end = = = = = = = = = = = = = = = = = = */
+/* = = = website styles start = = = = = = = = = = = = = = = = =  */
+.website-sub {
+  color: var(--gold);
+}
+
+/* = = = website styles end = = = = = = = = = = = = = = = = = = */
 /* = = = project header content starts = = = = = = = = = = = = = =  */
 .project-title-container {
   display: grid;
