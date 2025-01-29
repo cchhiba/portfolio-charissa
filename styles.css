@@ -364,6 +364,7 @@ img {
     "content-title-nine content-nine content-nine"
     "hackathon-mid-banner hackathon-mid-banner hackathon-mid-banner"
     "content-title-ten content-ten content-ten"
+    "website-mid-banner website-mid-banner website-mid-banner"
     "content-title-eleven content-eleven content-eleven"
     "content-title-twelve content-twelve content-twelve"
 }
@@ -380,6 +381,30 @@ img {
     "content-title-one content-one content-one"
     "content-title-two content-two content-two"
     "content-title-three content-three content-three"
+}
+
+.content-container-three {
+  display: grid;
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "stack stack-li stack-li"
+    "content-title-one content-one content-one"
+    "content-title-two content-two content-two"
+    "content-title-three content-three content-three"
+    "content-title-four content-four content-four"
+    "content-title-five content-five content-five"
+    "content-title-six content-six content-six"
+    "content-title-seven content-seven content-seven"
+    "content-title-eight content-eight content-eight"
+    "content-title-nine content-nine content-nine"
+    "content-title-ten content-ten content-ten"
+    "website-mid-banner website-mid-banner website-mid-banner"
+    "content-title-eleven content-eleven content-eleven"
+    "content-title-twelve content-twelve content-twelve"
 }
 
 .marlow-mid-banner {
