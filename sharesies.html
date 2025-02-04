@@ -78,7 +78,8 @@
 
     <div class="content-two">
       <p>The Design System team's goal is to enable the Sharesies product teams to efficiently create inclusive, cohesive, and engaging experiences that put investors in control of their financial future.</p>
-      <img src="sharesies-team.png" alt="the design system team">
+      <br>
+      <img src="sharesies-team-members.png" alt="the design system team">
     </div>
 
     <div class="content-title-three">
@@ -98,18 +99,23 @@
       <br>
       <P>With a live webapp already in use, I needed to port the existing components into the design system repository and apply a standardized design system treatment. The first step was converting React class components into functional components. From there, I worked with JSX, TypeScript, and Sass, carefully structuring each component. To manage states, validation, and submissions, I wrapped components in Formik components. Every component was then styled using global Sass files. The challenge was to make components flexible enough to adapt to different designs, and support dynamic validation and submission requirements, they needed to be reusable.
       </P>
-      <img src="sharesies-onion.png" alt="onion component diagram">
       <br>
-      <p>The inputs below share the same raw input component but are wrapped in different functions and styles—one consuming text, the other numbers.
+      <img src="sharesies-component-onion.png" alt="onion component diagram">
+      <br>
+      <p>The inputs below share the same raw input component but are wrapped in different functions and styles - one consuming emails, the other numbers.
       </p>
       <br>
-      <img src="sharesies-input-components.png" alt="input component comparison">
+      <img src="sharesies-email-input.png" alt="input component comparison">
+      <br>
+      <img src="sharesies-number-component.png" alt="input component comparison">
       <br>
       <p>Once a component was built in the design system repository, it needed to be displayed in Storybook, an interface for showcasing and testing components. To do this, I wrote a ‘Story’  file for each component, this file consumed my component code and spat out an interactive version, allowing users to interact with different styles, states, and values.
       </p>
       <br>
       <p>Storybook required me to write a ‘Story’ file for each component, this file consumed my component and spat out an interactive visual of it which gave any user of the design system the ability to play around with styles, states, and values.
       </p>
+      <br>
+      <img src="sharesies-storybook.png" alt="Storybook UI">
     </div>
 
     <div class="content-title-five">
@@ -130,6 +136,7 @@
       <br>
       <p>I wrote detailed documentation outlining usage guidelines, technical development considerations, and best practices, including key “do’s and don’ts.” Once the content was reviewed and finalized, I announced the release to the wider team through Slack and presented key updates during all-team meetings to ensure alignment and encourage adoption.
       </p>
+      <br>
       <img src="sharesies-figma2.png" alt="Sharesies Figma switch component design">
     </div>
 
@@ -153,13 +160,11 @@
       <h3>Sharesies Website + Webapp</h3>
     </div>
 
-    <div class="content-eight">
+    <div class="content-eight spacing-below">
       <p>And that’s it folks! Thanks for taking the time to read about my journey in building and integrating the design system. I hope it gave you some insight into my process, challenges and impact. Feel free to reach out if you’d like to learn more.</p>
       <br>
       <img src="sharesies-webapp.png" alt="sharesies website mock up">
-    </div>
-
-    <div class="content-ten spacing-below">
+      <br>
       <a href="https://www.sharesies.nz/" class="sharesies-sub" target="_blank">
         <h4>View the Sharesies website here.</h4>
       </a>
