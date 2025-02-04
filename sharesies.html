@@ -65,99 +65,103 @@
     </div>
 
     <div class="content-title-one">
-      <h3>challenge</h3>
+      <h3>OVERVIEW</h3>
     </div>
 
     <div class="content-one">
-      <p>The Design System team's goal is to enable the Sharesies product teams to efficiently create inclusive, cohesive, and engaging experiences that put investors in control of their financial future.</p>
-      <br>
-      <p>My challenge was to provide guidelines and standardize a set of reusable user interface components for other teams to use at scale. This included porting form components from the web application to the design system, and then integrating
-        them back into the web application.</p>
+      <p>Sharesies is an online investing platform that makes it easy for users to buy and sell shares, ETFs, and manage their funds. As a Developer on the Design System team, I played a key role in building the design system from the ground up. My focus was on standardizing and scaling reusable UI components with the aim of creating a cohesive, and accessible experience across the webapp.</p>
     </div>
 
     <div class="content-title-two">
-      <h3>Process</h3>
+      <h3>TEAM GOAL</h3>
     </div>
 
     <div class="content-two">
-      <img src="sharesies-diagram.svg" alt="development process diagram">
+      <p>The Design System team's goal is to enable the Sharesies product teams to efficiently create inclusive, cohesive, and engaging experiences that put investors in control of their financial future.</p>
+      <img src="sharesies-team.png" alt="the design system team">
     </div>
 
     <div class="content-title-three">
-      <h3>Figma</h3>
+      <h3>THE STRATEGY</h3>
     </div>
 
     <div class="content-three">
-      <p>I collaborated closely with the UX/UI Designers to ensure the design and naming conventions were carefully considered. We discussed the components in detail, taking a holistic approach as we explored how we can future-proof the component. I
-        also worked closely with the Senior Developers as we discusses and reviewed the sustainability of the code. </p>
+      <p>Our team engaged in daily discussions to shape the design system thoughtfully and strategically. We carefully considered where to house the design and code, established clear naming conventions, and defined foundational components. Taking a holistic approach, we focused on future-proofing the system by ensuring the components were scalable, easy to maintain, and built to support the product for years to come, ultimately creating a sustainable design system.</p>
+    </div>
+
+    <div class="content-title-four">
+      <h3>DEVELOPMENT PROCESS</h3>
     </div>
 
     <div class="content-four">
-      <img src="sharesies-figma.png" alt="sharesies Figma switch component design">
+      <img src="sharesies-diagram.svg" alt="development process diagram">
+      <br>
+      <P>With a live webapp already in use, I needed to port the existing components into the design system repository and apply a standardized design system treatment. The first step was converting React class components into functional components. From there, I worked with JSX, TypeScript, and Sass, carefully structuring each component. To manage states, validation, and submissions, I wrapped components in Formik components. Every component was then styled using global Sass files. The challenge was to make components flexible enough to adapt to different designs, and support dynamic validation and submission requirements, they needed to be reusable.
+      </P>
+      <img src="sharesies-onion.png" alt="onion component diagram">
+      <br>
+      <p>The inputs below share the same raw input component but are wrapped in different functions and styles—one consuming text, the other numbers.
+      </p>
+      <br>
+      <img src="sharesies-input-components.png" alt="input component comparison">
+      <br>
+      <p>Once a component was built in the design system repository, it needed to be displayed in Storybook, an interface for showcasing and testing components. To do this, I wrote a ‘Story’  file for each component, this file consumed my component code and spat out an interactive version, allowing users to interact with different styles, states, and values.
+      </p>
+      <br>
+      <p>Storybook required me to write a ‘Story’ file for each component, this file consumed my component and spat out an interactive visual of it which gave any user of the design system the ability to play around with styles, states, and values.
+      </p>
     </div>
 
     <div class="content-title-five">
-      <h3>Design System</h3>
+      <h3>Testing</h3>
     </div>
 
     <div class="content-five">
-      <p>I would extract react class components from the web application and port them over into the design system repository where I would convert them into functional components. This included working with JSX, TypeScript, and Sass. Each component
-        is wrapped within Formik functions and uses global Sass styling. I had to be careful with how I structured each component and take the global functions and styling into consideration.</p>
-      <br>
-      <p>Components are displayed in a user interface called Storybook, for the wider teams to access and utilize. Storybook requires a ‘story’ file to be written for each component to display it, along with its different variants and states.</p>
-      <br>
-      <p>Once the functionality and accessibility of the component were complete, I would test the function using the Jest testing library, which works well with the React framework. Each component would receive a 100% success rate before moving through to the next stage.</p>
+     <p>The final step was to test. Using Jest, I wrote headless test files with predefined instructions to validate the component’s behavior. As a design system requirement, each component had to achieve 100% test coverage.</p>
+    </div>
+
+    <div class="content-title-six">
+      <h3>DOCUMENTATION WRITING</h3>
     </div>
 
     <div class="content-six">
-      <img src="sharesies-storybook.png" alt="Sharesies storybook design system UI">
-    </div>
-
-    <div class="content-title-seven">
-      <h3>Documentation</h3>
-    </div>
-
-    <div class="content-seven">
-      <p>Zeroheights is used to display the documentation for the design system. It allows users to plugin Storybook and Figma token files. Documenting is an integral part of the design system as the design system team believes in having a single
-        source of truth for code and design.</p>
+      <p>Before packaging the component in a npm package, I had to write documentation. We used Zeroheights to document the design, it worked well for the team as we were able to integrate Storybook and Figma token files to create a single source of truth for both design and code.
+      </p>
       <br>
-      <p>Before creating an npm package for a component, I would write detailed documentation which outlined guidelines around usage, code, and design. I wrote technical development considerations and ‘do’s and don't.</p>
-      <br>
-      <p>Once the content was reviewed by the team, I would announce the release to the wider teams using Slack and during ‘all-team’ presentation meetings.</p>
-    </div>
-
-    <div class="content-eight">
+      <p>I wrote detailed documentation outlining usage guidelines, technical development considerations, and best practices, including key “do’s and don’ts.” Once the content was reviewed and finalized, I announced the release to the wider team through Slack and presented key updates during all-team meetings to ensure alignment and encourage adoption.
+      </p>
       <img src="sharesies-figma2.png" alt="Sharesies Figma switch component design">
     </div>
 
-    <div class="content-title-nine">
-      <h3>Web application</h3>
+    <div class="content-title-seven">
+      <h3>DEPLOYMENT</h3>
     </div>
 
-    <div class="content-nine">
-      <p>The old class component instances would be removed from the web application and replaced with the design system version. This process required rigorous testing as I didn't want the new component to cause any front and back-end changes.</p>
+    <div class="content-seven">
+      <p>Now the component would be ready for deployment within the webapp. I replaced the old components with their newly updated design system version. To ensure I didn’t break anything on the front or back end of the webapp, I had to test the branch before merging my changes.</p>
       <br>
-      <p>I used a Taiko repository to test the instances of the new component in the web application. This meant I had to write end-to-end tests for the user flows that used the component. This checked the functionality of the component. I wrote tests
-        that included taking snapshot images throughout the user flow.</p>
+      <p>I leveraged a Taiko repository to test the new components in real user flows, writing end-to-end tests to verify their functionality. These tests included capturing snapshot images at key interaction points to track any unexpected changes.
+      </p>
       <br>
-      <p>I then used the snapshots with a visual diffing tool called Percy which allowed me to review a snapshot of the change before and after it was made. It overlaid the images to hone in on any visual discrepancies.</p>
+      <p>Then, I used Percy, a visual diffing tool that compared the snapshots before and after the update. This allowed me to detect and resolve any visual discrepancies before deployment.
+      </p>
+      <br>
+      <img src="sharesies-percy-diffing-tool-example.png" alt="Percy diffing tool">
     </div>
 
-    <div class="content-title-ten">
-      <h3>Result</h3>
+    <div class="content-title-eight">
+      <h3>Sharesies Website + Webapp</h3>
     </div>
 
-    <div class="content-ten spacing-below">
+    <div class="content-eight">
+      <p>And that’s it folks! Thanks for taking the time to read about my journey in building and integrating the design system. I hope it gave you some insight into my process, challenges and impact. Feel free to reach out if you’d like to learn more.</p>
+      <br>
       <img src="sharesies-webapp.png" alt="sharesies website mock up">
     </div>
 
-    <div class="content-title-eleven">
-      <h3>Sharesies Website</h3>
-    </div>
-
-    <div class="content-eleven spacing-below">
+    <div class="content-ten spacing-below">
       <a href="https://www.sharesies.nz/" class="sharesies-sub" target="_blank">
-        <h4>Take a look at the Sharesies website here.</h4>
+        <h4>View the Sharesies website here.</h4>
       </a>
     </div>
 
