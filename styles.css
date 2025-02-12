@@ -240,6 +240,7 @@ img {
 /* = = = website styles start = = = = = = = = = = = = = = = = =  */
 .website-sub {
   color: var(--gold);
+  font-weight: bold;
 }
 
 /* = = = website styles end = = = = = = = = = = = = = = = = = = */
