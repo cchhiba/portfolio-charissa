@@ -61,7 +61,8 @@ h3 {
 }
 
 ul {
-  list-style: none;
+  list-style: circle;
+  list-style-position: outside;
 }
 
 img {
