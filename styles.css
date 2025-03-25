@@ -334,7 +334,8 @@ img {
 .banner img,
 .marlow-mid-banner img,
 .hackathon-mid-banner img,
-.website-mid-banner img {
+.website-mid-banner img,
+.quiz-mid-banner img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
@@ -397,7 +398,7 @@ img {
     "stack stack-li stack-li"
     "content-title-one content-one content-one"
     "content-title-two content-two content-two"
-    "website-mid-banner website-mid-banner website-mid-banner"
+    "quiz-mid-banner quiz-mid-banner quiz-mid-banner"
     "content-title-three content-three content-three"
     "content-title-four content-four content-four"
     "content-title-five content-five content-five"
@@ -417,6 +418,10 @@ img {
 
 .hackathon-mid-banner {
   grid-area: hackathon-mid-banner
+}
+
+.quiz-mid-banner {
+  grid-area: quiz-mid-banner
 }
 
 .website-mid-banner {
@@ -1065,7 +1070,7 @@ img {
       "content-one"
       "content-title-two"
       "content-two"
-      "website-mid-banner"
+      "quiz-mid-banner"
       "content-title-three"
       "content-three"
       "content-title-four"
