@@ -113,6 +113,7 @@ img {
 
 .landing-menu ul {
   text-align: right;
+  list-style-type: none;
 }
 
 .landing-menu li {
@@ -396,6 +397,7 @@ img {
     "stack stack-li stack-li"
     "content-title-one content-one content-one"
     "content-title-two content-two content-two"
+    "website-mid-banner website-mid-banner website-mid-banner"
     "content-title-three content-three content-three"
     "content-title-four content-four content-four"
     "content-title-five content-five content-five"
@@ -1063,6 +1065,7 @@ img {
       "content-one"
       "content-title-two"
       "content-two"
+      "website-mid-banner"
       "content-title-three"
       "content-three"
       "content-title-four"
