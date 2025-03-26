@@ -623,19 +623,17 @@ img {
 
 .card-container-highlight::before, .card-container-highlight::after {
   position: absolute;
-  background: rgba(242, 172, 172, 0.9);
+  background: rgba(243, 50, 50, 0.9);
   z-index: -1;
   transition: 1s;
   content: '';
 }
 
 .card-container-highlight:hover::before {
-  width: 0px;
   background: #e73c3c;
 }
 
 .card-container-highlight:hover::after {
-  height: 0px;
   background: #e73c3c;
 }
 
@@ -664,6 +662,12 @@ img {
   font-size: 0.8rem;
   font-weight: 400;
   margin-bottom: 5px;
+}
+
+.card-content-white p,
+.card-content-white h3,
+.card-content-white h1 {
+  color: #f6f6f6;
 }
 
 /* = = = card content ends = = = = = = = = = = = = = =  */
