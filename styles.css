@@ -410,6 +410,7 @@ img {
     "content-title-ten content-ten content-ten"
     "content-title-eleven content-eleven content-eleven"
     "content-title-twelve content-twelve content-twelve"
+    "content-title-thirteen content-thirteen content-thirteen"
 }
 
 .marlow-mid-banner {
@@ -569,6 +570,16 @@ img {
 
 .content-twelve {
   grid-area: content-twelve;
+  margin: var(--content-margin);
+  list-style: none;
+}
+
+.content-title-thirteen {
+  grid-area: content-title-thirteen;
+}
+
+.content-thirteen {
+  grid-area: content-thirteen;
   margin: var(--content-margin);
   list-style: none;
 }
@@ -1118,6 +1129,8 @@ img {
       "content-eleven"
       "content-title-twelve"
       "content-twelve"
+       "content-title-thirteen"
+      "content-thirteen"
   }
 
   .stack-list,
@@ -1132,7 +1145,8 @@ img {
   .content-nine,
   .content-ten,
   .content-eleven,
-  .content-twelve {
+  .content-twelve,
+  .content-thirteen {
     margin: 0 5%;
   }
 
