@@ -621,6 +621,28 @@ img {
   background: #fff;
 }
 
+.card-container-highlight::before, .card-container-highlight::after {
+  position: absolute;
+  background: rgba(242, 172, 172, 0.9);
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.card-container-highlight:hover::before {
+  width: 0px;
+  background: #e73c3c;
+}
+
+.card-container-highlight:hover::after {
+  height: 0px;
+  background: #e73c3c;
+}
+
+.card-container-highlight:hover {
+  background: #e73c3c;
+}
+
 .card-content {
   padding: 20px;
 }
