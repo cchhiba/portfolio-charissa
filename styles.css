@@ -111,7 +111,8 @@ img {
   grid-area: lm;
 }
 
-.landing-menu ul {
+.landing-menu ul,
+.about-menu ul {
   text-align: right;
   list-style-type: none;
 }
