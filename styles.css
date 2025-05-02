@@ -20,7 +20,7 @@
   --orange: orange;
   --lemon: #BCBB91;
   --gold: #C28710;
-
+  --blue: #000036;
 }
 
 html {
@@ -243,6 +243,13 @@ img {
 /* = = = website styles start = = = = = = = = = = = = = = = = =  */
 .website-sub {
   color: var(--gold);
+  font-weight: bold;
+}
+
+/* = = = website styles end = = = = = = = = = = = = = = = = = = */
+/* = = = website styles start = = = = = = = = = = = = = = = = =  */
+.fypon-sub {
+  color: var(--blue);
   font-weight: bold;
 }
 
